@@ -33,5 +33,5 @@ ADD bin/checkconfig.sh /logstash-checkconfig.sh
 # them when deploying, but they'll be run in test.sh
 ADD test /tmp/test
 
-EXPOSE 80 5228
+EXPOSE 5228 80
 CMD ["/run-logstash.sh"]
