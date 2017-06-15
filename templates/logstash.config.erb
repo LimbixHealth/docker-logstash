@@ -1,7 +1,5 @@
 input {
-  http {
-    port => 80
-  }
+  <%= ENV['LOGSTASH_INPUT_CONFIG'] || "" %>
 }
 
 filter {
